@@ -210,9 +210,6 @@ ul {
   }
 }
 
-
-
-
 .conteudo:hover {
   box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.8);
   transition: 0.5s;
@@ -480,7 +477,6 @@ ul {
 .box p{
   text-align: justify;
 }
-
 
 
 footer {
