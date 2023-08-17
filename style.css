@@ -294,9 +294,9 @@ ul {
   }
 }
 
-.conteudo:hover {
+.conteudo:hover{
   box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.8);
-  transition: 0.5s;
+  transition:0.5s;
 }
 
 
@@ -544,14 +544,14 @@ ul {
   grid-template-columns: repeat(18, 1fr);
   column-gap: 2rem;
   padding-bottom: 2rem;
+  min-width: 1535px;
+
 }
 
 .artigo h4 {
   grid-column: 5/-2;
   font-size: 24px;
   line-height: 28px;
-  max-width: 775px;
-  min-width: 300px;
 
 }
 
@@ -568,57 +568,102 @@ ul {
   object-fit: cover;
   grid-column-start: span 4;
   grid-column-end: auto;
-
-
+  z-index: 1;
 }
 
-@media(max-width:775px){
-    .artigo h4{
-        grid-column: 5;
-    }
+@media(max-width:1535px){
+  .artigo{
+    min-width: 1420px;
+
+  }
 }
-@media(max-width:700px){
+@media(max-width:1320px){
+  .artigo img{
+    margin-left: 0;
+
+  }
+}
+
+@media(max-width: 1295px){
+  .artigo h4{
+    margin-right: 200px;
+  }
+}
+@media(max-width: 1145px){
+  .artigo h4{
+    margin-right: 400px;
+  }
+}
+@media(max-width: 945px){
+  .artigo h4{
+    margin-right: 600px;
+  }
+}
+
+@media(max-width:740px){
   .artigo{
     gap: 0;
 
   }
 }
-@media(max-width:660px){
+@media(max-width:740px){
   .artigo img{
-      margin: 20px 20px 20px 0;
+      grid-column: 5/4;
+      width: 500px;
+      height: 200px;
+      margin-left: 30px;
+      margin-right: 250px ;
   }
 }
-@media(max-width:640px){
+@media(max-width:740px){
   .artigo h4{
-      grid-column: 5/2;
-      margin: 0 0 0 40px;
+      grid-column: 5/4;
+      margin-left: 20px;
+      margin-right: 250px;
   }
 }
-@media(max-width:640px){
+@media(max-width:740px){
+  .artigo img h4{
+     align-items: center;
+     justify-content: center;
+     
+  }
+}
+@media(max-width:645px){
+  .artigo h4{
+    grid-column: 5/2;
+    margin-right: 0px ;
+    
+ }
+}
+@media(max-width:645px){
   .artigo img{
-      margin: 0 0 0 150px;
-
+    width: 400px;
+    height: 200px;
+    grid-column: 5/1;
   }
 }
 
 @media(max-width:470px){
   .artigo img{
-    margin: 0 0 0 40px;
+    margin: 0;
   }
 }
 @media(max-width:470px){
   .artigo h4{
     grid-column: 5/1;
+    margin-left: 75px;
+   
 
   }
 }
-@media(max-width:355px){
+@media(max-width:400px){
   .artigo h4{
     grid-column: 5/1;
     margin: 0;
   }
 }
-@media(max-width:355px){
+@media(max-width:400px){
   .artigo img{
     margin: 0;
   }
