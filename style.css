@@ -443,7 +443,7 @@ ul {
 
 .container .conteudo a:hover{
   background-image: linear-gradient(180deg, transparent, #000);
-  animation: desaparecer 0.5s forwards;
+  animation: desaparecer 1s forwards;
 }
 
 @keyframes desaparecer{
