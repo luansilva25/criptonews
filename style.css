@@ -30,7 +30,10 @@ body {
 
 #titulo {
   grid-column: 6/-1;
+  animation: titulo 1s infinite;
 }
+
+
 
 @media(max-width: 375px){
   #titulo{
@@ -435,7 +438,24 @@ ul {
   display: block;
   position: relative;
   height: 250px;
+ 
 }
+
+.container .conteudo a:hover{
+  background-image: linear-gradient(180deg, transparent, #000);
+  animation: desaparecer 0.5s forwards;
+}
+
+@keyframes desaparecer{
+  50%{
+    background-image: linear-gradient(180deg, transparent, #000);
+    opacity: 0.9;
+  }
+  100%{
+    background-image: linear-gradient(180deg, transparent, transparent);
+  }
+}
+
 @media(max-width: 1660px){
   .container .conteudo a {
     background-image: linear-gradient(180deg, transparent, #000);
